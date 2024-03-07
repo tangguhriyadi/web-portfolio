@@ -1,0 +1,10 @@
+{
+  "src/**/*.{js,jsx,ts,tsx}": [
+    "eslint --ext .js,.jsx,.ts,.tsx --quiet src",
+    "prettier --write src",
+    "jest --passWithNoTests"
+  ],
+  "src/**/*.{css,scss}": [
+    "prettier --write src"
+  ]
+}
