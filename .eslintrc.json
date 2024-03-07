@@ -1,3 +1,29 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": "next/core-web-vitals",
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    ".prettierrc",
+    ".prettierignore"
+  ],
+  "rules": {
+    "semi": [
+      "error"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "no-console": [
+      "error"
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error"
+    ],
+    "@typescript-eslint/no-explicit-any": "warn"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ]
 }
