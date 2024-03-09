@@ -1,7 +1,12 @@
 import React from "react";
+import ThemeToggler from "./ThemeToggler";
 
 const Header: React.FC = () => {
-  return <header>Header</header>;
+  return (
+    <header>
+      <ThemeToggler />
+    </header>
+  );
 };
 
 export default Header;
