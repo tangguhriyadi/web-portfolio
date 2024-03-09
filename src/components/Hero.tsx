@@ -40,9 +40,39 @@ const Hero: React.FC = () => {
                 Download Resume <Download size={18} />
               </Button>
             </div>
+            <Socials
+              containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+              iconStyles="text-foreground text-[22px] hover:text-primary transition-all"
+            />
           </div>
           {/* image */}
-          <div className="hidden xl:flex relative">img</div>
+          <div className="hidden xl:flex relative">
+            {/* badge 1 */}
+            <Badge
+              endCountNum={2}
+              badgeText="Years Of Experience"
+              icon={<RiBriefcase4Fill />}
+              containerStyles="absolute top-[24%] -left-[5rem]"
+            />
+            <Badge
+              endCountNum={7}
+              badgeText="Finished Projects"
+              icon={<RiTodoFill />}
+              containerStyles="absolute top-[80%] -left-[1rem]"
+            />
+            <Badge
+              endCountNum={9}
+              badgeText="Happy Clients"
+              endCountText="k"
+              icon={<RiTeamFill />}
+              containerStyles="absolute top-[55%] -right-8"
+            />
+            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+            <DevImg
+              imgSrc="/hero/developer.png"
+              containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
+            />
+          </div>
         </div>
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary" />
