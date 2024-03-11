@@ -91,7 +91,7 @@ const Work: React.FC = () => {
     <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto">
         {/* text */}
-        <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
+        <div className="max-w-[400px] mx-auto  text-center mb-12 flex flex-col justify-center items-center ">
           <h2 className="section-title mb-4">Latest Project</h2>
           <p className="subtitle mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -102,7 +102,7 @@ const Work: React.FC = () => {
           </Link>
         </div>
         {/* slider */}
-        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0 ">
+        <div className="">
           <Swiper
             className="h-[480px]"
             slidesPerView={1}
