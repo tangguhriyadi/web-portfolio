@@ -48,13 +48,15 @@ const About: React.FC = () => {
                 {/* personal info */}
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-4">
-                      Unmatched Service Quality for over 10 years
+                    <h3 className="h3 mb-4 capitalize">
+                      I possess strong adaptability and aptitude for career
+                      shifting.
                     </h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      I Specialize in crafting intuitive websites with
-                      cutting-edge technology, delivering dynamic and engaging
-                      user experiences.
+                      Despite not holding a Bachelor's degree in Information
+                      Technology, I've effectively transitioned into the role of
+                      a proficient software engineer, leveraging hands-on
+                      experience and ongoing learning to excel in my field.
                     </p>
                     {/* icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -162,7 +164,7 @@ const About: React.FC = () => {
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-8"> What I Use Everyday </h3>
                     {/* skills */}
-                    <div className="mb-16">
+                    <div className="mb-8">
                       <h4 className="text-xl font-semibold mb-2"> Skills</h4>
                       <div className="border-b border-border mb-4"></div>
                       {/* lists */}

@@ -26,8 +26,9 @@ const Hero: React.FC = () => {
             </div>
             <h1 className="h1 mb-4">Hello, my name is Tangguh Riyadi</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Brief description with insights into myself, my vocational
-              journey, and what I engage in professionally
+              A succinct yet comprehensive summary shedding light on my
+              background, career path, and the professional activities I am
+              involved in.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -36,9 +37,11 @@ const Hero: React.FC = () => {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Download Resume <Download size={18} />
-              </Button>
+              <Link href="/CV_03012024.pdf" target="_blank">
+                <Button variant="secondary" className="gap-x-2">
+                  Download Resume <Download size={18} />
+                </Button>
+              </Link>
             </div>
             <Socials
               containerStyles="flex gap-x-6 mx-auto xl:mx-0"

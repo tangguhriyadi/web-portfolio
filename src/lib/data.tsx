@@ -1,4 +1,10 @@
-import { RiGithubFill, RiLinkedinFill, RiMediumFill } from "react-icons/ri";
+import {
+  RiGithubFill,
+  RiLinkedinFill,
+  RiMediumFill,
+  RiTelegramFill,
+  RiWhatsappFill,
+} from "react-icons/ri";
 import {
   InfoDataType,
   ProjectType,
@@ -98,34 +104,42 @@ export const serviceData: ServiceType[] = [
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
     title: "Technical Standardization",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+      "Establishing and implementing best practice, guidelines, and protocols aimed at enhancing code quality and adherence to industry standards. ",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+      "Encompassing the creation, enhancement, and maintenance of websites and web applications.",
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
     title: "App Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+      "Involving the design, development, and deployment of backend applications tailored to meet specific business needs or consumer demands",
   },
 ];
 
 export const iconData: SocialIconType[] = [
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/muhammad-tangguh-riyadi-b0a36a194/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/tangguhriyadi",
     name: <RiGithubFill />,
   },
   {
-    path: "/",
+    path: "https://medium.com/@mtangguh97",
     name: <RiMediumFill />,
+  },
+  {
+    path: "https://wa.me/+6282116780425",
+    name: <RiWhatsappFill />,
+  },
+  {
+    path: "https://t.me/tangguhriyadi97",
+    name: <RiTelegramFill />,
   },
 ];
 
@@ -209,6 +223,15 @@ export const skillData: QualificationType[] = [
       },
       {
         name: "Backend Development",
+      },
+      {
+        name: "ReactJS NextJS",
+      },
+      {
+        name: "NestJS ExpressJS",
+      },
+      {
+        name: "Docker",
       },
     ],
   },
