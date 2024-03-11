@@ -4,19 +4,11 @@ import { Card, CardHeader } from "./ui/card";
 import { Badge } from "./ui/badge";
 import Link from "next/link";
 import { Link2Icon } from "lucide-react";
+import { ProjectType } from "@/lib/type";
 
 interface ProjectCardProps {
   project: ProjectType;
 }
-
-export type ProjectType = {
-  image: string | StaticImageData;
-  category: string;
-  name: string;
-  description: string;
-  link: string;
-  github?: string;
-};
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (

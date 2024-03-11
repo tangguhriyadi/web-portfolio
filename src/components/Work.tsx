@@ -1,5 +1,4 @@
 "use client";
-import { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -9,82 +8,8 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Button } from "./ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProjectCard, { ProjectType } from "./ProjectCard";
-
-const projectData: ProjectType[] = [
-  {
-    image: "/work/3.png",
-    category: "react js",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "react js",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "next js",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "next js",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "next js",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "next js",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "fullstack",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "fullstack",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-];
+import ProjectCard from "./ProjectCard";
+import { projectData } from "@/lib/data";
 
 const Work: React.FC = () => {
   return (

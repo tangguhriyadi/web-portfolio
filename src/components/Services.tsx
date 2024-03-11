@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Blocks, GanttChartSquare, Gem } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -8,33 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-
-type ServiceType = {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-};
-
-const serviceData: ServiceType[] = [
-  {
-    icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "Technical Standardization",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-  },
-  {
-    icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-  },
-  {
-    icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "App Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-  },
-];
+import { serviceData } from "../lib/data";
 
 const Services: React.FC = () => {
   return (
