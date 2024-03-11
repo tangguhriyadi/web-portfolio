@@ -2,9 +2,9 @@
 
 import React, { useMemo, useState } from "react";
 import { projectData } from "@/lib/data";
-import { Tabs, TabsList, TabsTrigger } from "../../components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TabsContent } from "@radix-ui/react-tabs";
-import ProjectCard from "../../components/ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 
 const uniqueCategories = [
   "all projects",
