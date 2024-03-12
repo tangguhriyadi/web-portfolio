@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import { QualificationType } from "@/lib/type";
 import { infoData, qualificationData, skillData } from "../lib/data";
+import DockerLogo from "./DockerLogo";
 
 const About: React.FC = () => {
   const getData = (
@@ -162,9 +163,9 @@ const About: React.FC = () => {
                 {/* skills & tools */}
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8"> What I Use Everyday </h3>
+                    <h3 className="h3 mb-6"> What I Use Everyday </h3>
                     {/* skills */}
-                    <div className="mb-8">
+                    <div className="mb-4">
                       <h4 className="text-xl font-semibold mb-2"> Skills</h4>
                       <div className="border-b border-border mb-4"></div>
                       {/* lists */}
@@ -191,7 +192,7 @@ const About: React.FC = () => {
                       </h3>
                       <div className="border-b border-border mb-4"></div>
                       {/* lists */}
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                      <div className="flex gap-x-8 justify-center items-center xl:justify-start">
                         {getData(skillData, "tools")?.data.map(
                           (data, index) => {
                             const { imgPath } = data;

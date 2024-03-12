@@ -222,13 +222,16 @@ export const skillData: QualificationType[] = [
         name: "Javascript, Typescript, Go",
       },
       {
-        name: "Backend Development",
-      },
-      {
         name: "ReactJS NextJS",
       },
       {
+        name: "Backend Development",
+      },
+      {
         name: "NestJS ExpressJS",
+      },
+      {
+        name: "PostgreSQL MongoDB Redis",
       },
       {
         name: "Docker",
@@ -245,7 +248,7 @@ export const skillData: QualificationType[] = [
         imgPath: "/about/notion.svg",
       },
       {
-        imgPath: "/about/wordpress.svg",
+        imgPath: "/docker.svg",
       },
     ],
   },
