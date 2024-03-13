@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
               containerStyles="absolute top-[24%] -left-[5rem]"
             />
             <Badge
-              endCountNum={7}
+              endCountNum={8}
               badgeText="Finished Projects"
               icon={<RiTodoFill />}
               containerStyles="absolute top-[80%] -left-[1rem]"

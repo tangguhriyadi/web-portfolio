@@ -27,7 +27,7 @@ const page = () => {
           My Projects
         </h2>
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-          <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[576px] mb-12 mx-auto md:border dark:border-none">
+          <TabsList className="w-full grid h-full md:grid-cols-6 lg:max-w-[720px] mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => (
               <TabsTrigger
                 onClick={() => setCategory(category)}

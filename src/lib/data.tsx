@@ -26,76 +26,69 @@ import {
 
 export const projectData: ProjectType[] = [
   {
-    image: "/work/3.png",
+    image: "/work/lh-figma.png",
+    category: "next js",
+    name: "Learnhub SaaS",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+    link: "https://registration.learnhub.id",
+  },
+  {
+    image: "/work/4.png",
+    category: "node js",
+    name: "myDigiLearn SaaS",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+    link: "https://mydigilearn.id",
+  },
+  {
+    image: "/work/2.png",
     category: "react js",
-    name: "Nexa Webiste",
+    name: "Anime List",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
     link: "/",
-    github: "/",
+    github: "https://github.com/tangguhriyadi/react-ts-animation",
+  },
+  {
+    image: "/work/2.png",
+    category: "react js",
+    name: "Motiolibs NPM",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+    link: "https://www.npmjs.com/package/@motiolibs/motio-js",
+  },
+  {
+    image: "/work/smarsol.png",
+    category: "react js",
+    name: "Smart Soulution v1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+    link: "https://smartsol.id",
+  },
+  {
+    image: "/work/apotek.png",
+    category: "fullstack",
+    name: "Apotek Asli Express App",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+    link: "https://app.apotekasli.net",
   },
   {
     image: "/work/4.png",
     category: "react js",
-    name: "Nexa Webiste",
+    name: "IOT Device Mangement",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
+    link: "https://m2m.lintasarta.net",
   },
   {
-    image: "/work/2.png",
-    category: "next js",
-    name: "Nexa Webiste",
+    image: "/work/binar-car.png",
+    category: "react js",
+    name: "Binar Car Rental",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "next js",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "next js",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "next js",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "fullstack",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "fullstack",
-    name: "Nexa Webiste",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
-    github: "/",
+    github: "https://github.com/tangguhriyadi/Binar-Challenge-Platinum-Customer"
   },
 ];
 
@@ -216,10 +209,10 @@ export const skillData: QualificationType[] = [
         name: "HTML, CSS",
       },
       {
-        name: "Frontend Development",
+        name: "Javascript, Typescript, Go",
       },
       {
-        name: "Javascript, Typescript, Go",
+        name: "Frontend Development",
       },
       {
         name: "ReactJS NextJS",
@@ -249,6 +242,9 @@ export const skillData: QualificationType[] = [
       },
       {
         imgPath: "/docker.svg",
+      },
+      {
+        imgPath: "/sql.svg",
       },
     ],
   },

@@ -5,7 +5,7 @@ export type ProjectType = {
   category: string;
   name: string;
   description: string;
-  link: string;
+  link?: string;
   github?: string;
 };
 

@@ -5,6 +5,7 @@ import { Badge } from "./ui/badge";
 import Link from "next/link";
 import { Link2Icon } from "lucide-react";
 import { ProjectType } from "@/lib/type";
+import { RiGithubFill } from "react-icons/ri";
 
 interface ProjectCardProps {
   project: ProjectType;
@@ -16,20 +17,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <CardHeader className="p-0">
         <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
           <Image
-            className="absolute bottom-0 shadow-2xl"
+            className="absolute bottom-0 shadow-2xl max-h-[250px]"
             src={project.image}
             width={247}
             height={250}
             alt="project"
             priority
           />
-          <div>
-            <Link
-              className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
-              href={project.link}
-            >
-              <Link2Icon className="text-white" />
-            </Link>
+          <div className="flex justify-center items-center gap-x-2">
+            {project.link && (
+              <Link
+                className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
+                href={project.link}
+                target="_blank"
+              >
+                <Link2Icon className="text-white" />
+              </Link>
+            )}
+            {project.github && (
+              <Link
+                className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
+                href={project.github}
+                target="_blank"
+              >
+                <RiGithubFill className="text-white" />
+              </Link>
+            )}
           </div>
         </div>
       </CardHeader>
