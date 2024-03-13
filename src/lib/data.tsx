@@ -34,7 +34,7 @@ export const projectData: ProjectType[] = [
     link: "https://registration.learnhub.id",
   },
   {
-    image: "/work/4.png",
+    image: "/work/mdl.png",
     category: "node js",
     name: "myDigiLearn SaaS",
     description:
@@ -51,7 +51,7 @@ export const projectData: ProjectType[] = [
     github: "https://github.com/tangguhriyadi/react-ts-animation",
   },
   {
-    image: "/work/2.png",
+    image: "/work/motio-npm.png",
     category: "react js",
     name: "Motiolibs NPM",
     description:
