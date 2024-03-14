@@ -42,7 +42,7 @@ const page = () => {
           <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {filteredProjects.map((project, index) => (
               <TabsContent key={index} value={category}>
-                <ProjectCard project={project} />
+                <ProjectCard project={project} isGrid />
               </TabsContent>
             ))}
           </div>

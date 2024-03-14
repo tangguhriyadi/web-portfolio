@@ -30,7 +30,7 @@ export const projectData: ProjectType[] = [
     category: "next js",
     name: "Learnhub SaaS",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+      "Learning Platform that allows us to learn anywhere and anytime with anyone.",
     link: "https://registration.learnhub.id",
   },
   {
@@ -38,16 +38,15 @@ export const projectData: ProjectType[] = [
     category: "node js",
     name: "myDigiLearn SaaS",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+      "Learning platform with the most complete types of digital learning content in Indonesia.",
     link: "https://mydigilearn.id",
   },
   {
-    image: "/work/2.png",
+    image: "/work/anime.png",
     category: "react js",
-    name: "Anime List",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    link: "/",
+    name: "Anime Collection",
+    description: "A simple project provides many anime TV, movies, comics, etc.",
+    link: "https://animecollectionfield.vercel.app/",
     github: "https://github.com/tangguhriyadi/react-ts-animation",
   },
   {
@@ -55,7 +54,7 @@ export const projectData: ProjectType[] = [
     category: "react js",
     name: "Motiolibs NPM",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+      "An UI library (reactjs)  many componts for project/product needs.",
     link: "https://www.npmjs.com/package/@motiolibs/motio-js",
   },
   {
@@ -63,23 +62,22 @@ export const projectData: ProjectType[] = [
     category: "react js",
     name: "Smart Soulution v1",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+      "IoT platform which provides asset or device monitoring system.",
     link: "https://smartsol.id",
   },
   {
     image: "/work/apotek.png",
     category: "fullstack",
     name: "Apotek Asli Express App",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+    description: "An Inventory and HR management application for pharmacies.",
     link: "https://app.apotekasli.net",
   },
   {
-    image: "/work/4.png",
+    image: "/work/iot-dm.png",
     category: "react js",
     name: "IOT Device Mangement",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
+      "IoT platform which provides customer premises equipment monitoring system.",
     link: "https://m2m.lintasarta.net",
   },
   {
@@ -87,8 +85,9 @@ export const projectData: ProjectType[] = [
     category: "react js",
     name: "Binar Car Rental",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-    github: "https://github.com/tangguhriyadi/Binar-Challenge-Platinum-Customer"
+      "Car Rental Application.",
+    github:
+      "https://github.com/tangguhriyadi/Binar-Challenge-Platinum-Customer",
   },
 ];
 
