@@ -9,6 +9,7 @@ import {
   InfoDataType,
   ProjectType,
   QualificationType,
+  ReviewType,
   ServiceType,
   SocialIconType,
 } from "./type";
@@ -45,9 +46,18 @@ export const projectData: ProjectType[] = [
     image: "/work/anime.png",
     category: "react js",
     name: "Anime Collection",
-    description: "A simple project provides many anime TV, movies, comics, etc.",
+    description:
+      "A simple project provides many anime TV, movies, comics, etc.",
     link: "https://animecollectionfield.vercel.app/",
     github: "https://github.com/tangguhriyadi/react-ts-animation",
+  },
+  {
+    image: "/work/dlh.png",
+    category: "react js",
+    name: "Dashboard Learnhub",
+    description:
+      "Content Management System and Dashboard Analytic for Learnhub SaaS.",
+    link: "https://dashboard.motiolibs.my.id/",
   },
   {
     image: "/work/motio-npm.png",
@@ -84,8 +94,7 @@ export const projectData: ProjectType[] = [
     image: "/work/binar-car.png",
     category: "react js",
     name: "Binar Car Rental",
-    description:
-      "Car Rental Application.",
+    description: "Car Rental Application.",
     github:
       "https://github.com/tangguhriyadi/Binar-Challenge-Platinum-Customer",
   },
@@ -245,6 +254,54 @@ export const skillData: QualificationType[] = [
       {
         imgPath: "/sql.svg",
       },
+      {
+        imgPath: "/postman.svg",
+      },
     ],
+  },
+];
+
+export const reviewsData: ReviewType[] = [
+  {
+    avatar: "/reviews/fawaz.jpg",
+    name: "Fawaz Hutomi",
+    job: "Frontend Engineer",
+    review: `"Such a good engineer to collaborate with. 👍"`,
+    link: "https://www.showwcase.com/hutomifawaza",
+  },
+  {
+    avatar: "/reviews/uzi.jpg",
+    name: "Yayang Fauzy",
+    job: "Backend Engineer",
+    review: `"Disciplined, brave and agile. I can't wait for the next project. 🚀"`,
+    link: "https://www.linkedin.com/in/yangfauz/",
+  },
+  {
+    avatar: "/reviews/indra.jpg",
+    name: "Indra Tristia",
+    job: "Frontend Engineer",
+    review: `"Dependable and resourceful, this software engineer consistently delivers high-quality solutions that exceed project requirements."`,
+    link: "https://indratrst.github.io/indra-portofolio/",
+  },
+  {
+    avatar: "/reviews/avatar-3.png",
+    name: "Nur Sasongko",
+    job: "Frontend Engineer",
+    review: `"Consistently delivers high-quality code with meticulous attention to detail, elevating any project he touch."`,
+    link: "https://www.linkedin.com/in/nur-sasongko/",
+  },
+  {
+    avatar: "/reviews/aria-edited.jpg",
+    name: "Aria Bagaswara",
+    job: "Frontend Engineer",
+    review: `"Demonstrates exceptional problem-solving skills and consistently exceeds expectations with innovative solutions."`,
+    link: "https://www.linkedin.com/in/aria-bagaswara/",
+  },
+  {
+    avatar: "/reviews/ghifar.jpg",
+    name: "Ghifar Rijali",
+    job: "Frontend Engineer",
+    review: `"Exceptional communicator who collaborates seamlessly with team members, delivering robust and scalable solutions."`,
+    link: "https://www.linkedin.com/in/muhammadghifarr/",
   },
 ];

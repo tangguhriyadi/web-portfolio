@@ -29,3 +29,11 @@ export type QualificationType = {
   title: string;
   data: Record<string, string>[];
 };
+
+export type ReviewType = {
+  avatar: string | StaticImageData;
+  name: string;
+  job: string;
+  review: string;
+  link:string
+};

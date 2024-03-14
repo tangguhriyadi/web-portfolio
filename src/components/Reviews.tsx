@@ -1,67 +1,17 @@
 "use client";
-import React from "react";
+import React, { useCallback, useRef } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
-import { Button } from "./ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-
-type ReviewType = {
-  avatar: string | StaticImageData;
-  name: string;
-  job: string;
-  review: string;
-};
-
-const reviewsData: ReviewType[] = [
-  {
-    avatar: "/reviews/avatar-1.png",
-    name: "Richard Thompson",
-    job: "Chef",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-  },
-  {
-    avatar: "/reviews/avatar-2.png",
-    name: "Richard Thompson",
-    job: "Chef",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-  },
-  {
-    avatar: "/reviews/avatar-3.png",
-    name: "Richard Thompson",
-    job: "Chef",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-  },
-  {
-    avatar: "/reviews/avatar-4.png",
-    name: "Richard Thompson",
-    job: "Chef",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-  },
-  {
-    avatar: "/reviews/avatar-5.png",
-    name: "Richard Thompson",
-    job: "Chef",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-  },
-  {
-    avatar: "/reviews/avatar-6.png",
-    name: "Richard Thompson",
-    job: "Chef",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non feugiat ligula. ",
-  },
-];
+import { reviewsData } from "../lib/data";
+import Link from "next/link";
 
 const Reviews: React.FC = () => {
+  const handleImageClick = useCallback<() => void>(() => {}, []);
   return (
     <section className="mb-12 xl:mb-32">
       <div className="container mx-auto">
@@ -85,21 +35,27 @@ const Reviews: React.FC = () => {
             <SwiperSlide key={index}>
               <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]">
                 <CardHeader className="p-0 mb-10">
-                  <div className="flex items-center gap-x-4 ">
-                    <Image
-                      src={data.avatar}
-                      width={70}
-                      height={70}
-                      alt=""
-                      priority
-                    />
-                    <div className="flex flex-col">
-                      <CardTitle>{data.name}</CardTitle>
-                      <p>{data.job}</p>
+                  <Link href={data.link} target="_blank">
+                    <div
+                      onClick={() => handleImageClick()}
+                      className="flex items-center gap-x-4 "
+                    >
+                      <Image
+                        src={data.avatar}
+                        width={70}
+                        height={70}
+                        alt=""
+                        priority
+                        className="rounded-full w-[70px] h-[70px] cursor-pointer"
+                      />
+                      <div className="flex flex-col">
+                        <CardTitle>{data.name}</CardTitle>
+                        <p>{data.job}</p>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </CardHeader>
-                <CardDescription className="text-lg text-muted-foreground">
+                <CardDescription className="text-lg text-muted-foreground italic">
                   {data.review}
                 </CardDescription>
               </Card>
