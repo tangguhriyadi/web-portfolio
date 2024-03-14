@@ -284,7 +284,7 @@ export const reviewsData: ReviewType[] = [
     link: "https://indratrst.github.io/indra-portofolio/",
   },
   {
-    avatar: "/reviews/avatar-3.png",
+    avatar: "/reviews/koko.jpg",
     name: "Nur Sasongko",
     job: "Frontend Engineer",
     review: `"Consistently delivers high-quality code with meticulous attention to detail, elevating any project he touch."`,
