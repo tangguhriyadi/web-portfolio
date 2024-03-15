@@ -5,19 +5,21 @@ import { projectData } from "@/lib/data";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TabsContent } from "@radix-ui/react-tabs";
 import ProjectCard from "@/components/ProjectCard";
+import { flattenArray } from "@/lib/utils";
 
-const uniqueCategories = [
-  "all projects",
-  ...new Set(projectData.map((item) => item.category)),
-];
+const categories = projectData.map((category) => category.categories);
+
+const flattenCategory = flattenArray(categories);
+
+const uniqueCategories = ["all stacks", ...new Set(flattenCategory)];
 const page = () => {
   const [categories, setCategories] = useState<string[]>(uniqueCategories);
-  const [category, setCategory] = useState<string>("all projects");
+  const [category, setCategory] = useState<string>("all stacks");
   const filteredProjects = useMemo(() => {
     return projectData.filter((project) => {
-      return category === "all projects"
+      return category === "all stacks"
         ? project
-        : project.category === category;
+        : project.categories.includes(category);
     });
   }, [category, projectData]);
   return (
@@ -27,7 +29,7 @@ const page = () => {
           My Projects
         </h2>
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-          <TabsList className="w-full grid h-full md:grid-cols-6 lg:max-w-[720px] mb-12 mx-auto md:border dark:border-none">
+          <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[720px] mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => (
               <TabsTrigger
                 onClick={() => setCategory(category)}

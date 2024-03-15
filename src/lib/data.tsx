@@ -28,7 +28,7 @@ import {
 export const projectData: ProjectType[] = [
   {
     image: "/work/lh-figma.png",
-    category: "next js",
+    categories: ["next js", "typescript"],
     name: "Learnhub SaaS",
     description:
       "Learning Platform that allows us to learn anywhere and anytime with anyone.",
@@ -36,7 +36,7 @@ export const projectData: ProjectType[] = [
   },
   {
     image: "/work/mdl.png",
-    category: "node js",
+    categories: ["node js", "Go"],
     name: "myDigiLearn SaaS",
     description:
       "Learning platform with the most complete types of digital learning content in Indonesia.",
@@ -44,7 +44,7 @@ export const projectData: ProjectType[] = [
   },
   {
     image: "/work/anime.png",
-    category: "react js",
+    categories: ["react js", "typescript"],
     name: "Anime Collection",
     description:
       "A simple project provides many anime TV, movies, comics, etc.",
@@ -53,7 +53,7 @@ export const projectData: ProjectType[] = [
   },
   {
     image: "/work/dlh.png",
-    category: "react js",
+    categories: ["react js", "typescript"],
     name: "Dashboard Learnhub",
     description:
       "Content Management System and Dashboard Analytic for Learnhub SaaS.",
@@ -61,15 +61,15 @@ export const projectData: ProjectType[] = [
   },
   {
     image: "/work/motio-npm.png",
-    category: "react js",
+    categories: ["react js", "typescript"],
     name: "Motiolibs NPM",
     description:
-      "An UI library (reactjs)  many componts for project/product needs.",
+      "An open-source UI library (reactjs) that provides many components for project/product needs.",
     link: "https://www.npmjs.com/package/@motiolibs/motio-js",
   },
   {
     image: "/work/smarsol.png",
-    category: "react js",
+    categories: ["react js", "typescript"],
     name: "Smart Soulution v1",
     description:
       "IoT platform which provides asset or device monitoring system.",
@@ -77,14 +77,14 @@ export const projectData: ProjectType[] = [
   },
   {
     image: "/work/apotek.png",
-    category: "fullstack",
+    categories: ["reactjs", "node js"],
     name: "Apotek Asli Express App",
     description: "An Inventory and HR management application for pharmacies.",
     link: "https://app.apotekasli.net",
   },
   {
     image: "/work/iot-dm.png",
-    category: "react js",
+    categories: ["react js"],
     name: "IOT Device Mangement",
     description:
       "IoT platform which provides customer premises equipment monitoring system.",
@@ -92,7 +92,7 @@ export const projectData: ProjectType[] = [
   },
   {
     image: "/work/binar-car.png",
-    category: "react js",
+    categories: ["react js"],
     name: "Binar Car Rental",
     description: "Car Rental Application.",
     github:

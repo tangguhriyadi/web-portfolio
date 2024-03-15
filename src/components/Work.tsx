@@ -19,8 +19,8 @@ const Work: React.FC = () => {
         <div className="max-w-[400px] mx-auto  text-center mb-12 flex flex-col justify-center items-center ">
           <h2 className="section-title mb-4">Latest Project</h2>
           <p className="subtitle mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            non feugiat ligula.{" "}
+            Engaging in projects with diverse requirements and features enables
+            us to adopt a broad perspective on technology.
           </p>
           <Link href="/projects">
             <Button>All Projects</Button>
