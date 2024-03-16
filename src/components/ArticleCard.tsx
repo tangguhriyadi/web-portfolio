@@ -55,9 +55,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
           <div className="flex flex-col gap-y-1">
             <CardTitle>Muhammad Tangguh Riyadi</CardTitle>
             <CardDescription className="flex gap-x-1 text-base items-center">
-              <div>{article.duration} min read</div>
-              <div className="bg-neutral-500 rounded-full w-1 h-1 m-1"></div>
-              <div>{formatDate(article.published_at)}</div>
+              <span>{article.duration} min read</span>
+              <span className="bg-neutral-500 rounded-full w-1 h-1 m-1"></span>
+              <span>{formatDate(article.published_at)}</span>
             </CardDescription>
           </div>
         </div>
