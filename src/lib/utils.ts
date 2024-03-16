@@ -16,3 +16,28 @@ export function flattenArray(arr: any[]): any[] {
   }
   return result;
 }
+
+export function formatDate(inputDate: string): string {
+  const months: string[] = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  const parts: string[] = inputDate.split("-");
+  const year: number = parseInt(parts[0]);
+  const monthIndex: number = parseInt(parts[1]) - 1; // Month indexes start from 0
+  const day: number = parseInt(parts[2]);
+
+  const formattedDate: string = `${months[monthIndex]} ${day}, ${year}`;
+
+  return formattedDate;
+}

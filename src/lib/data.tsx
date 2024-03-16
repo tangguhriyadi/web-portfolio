@@ -6,6 +6,7 @@ import {
   RiWhatsappFill,
 } from "react-icons/ri";
 import {
+  ArticleType,
   InfoDataType,
   ProjectType,
   QualificationType,
@@ -303,5 +304,24 @@ export const reviewsData: ReviewType[] = [
     job: "Frontend Engineer",
     review: `"Exceptional communicator who collaborates seamlessly with team members, delivering robust and scalable solutions."`,
     link: "https://www.linkedin.com/in/muhammadghifarr/",
+  },
+];
+
+export const articleData: ArticleType[] = [
+  {
+    title:
+      "JavaScript Clean Code for Beginners: Best Practices for Writing Maintainable Code",
+    image: "/article/js.png",
+    link: "https://medium.com/@mtangguh97/javascript-clean-code-for-beginners-best-practices-for-writing-maintainable-code-c047e322bd98",
+    duration: 3,
+    published_at: "2024-03-09",
+  },
+  {
+    title:
+      "Implementing SOLID Principles in ReactJS with TypeScript: Ensuring Code Quality, Scalability and Maintainability",
+    image: "/article/react.png",
+    link: "https://medium.com/@mtangguh97/implementing-solid-principles-in-reactjs-with-typescript-ensuring-code-quality-scalability-and-4cd9ce4d897e",
+    duration: 3,
+    published_at: "2024-03-16",
   },
 ];

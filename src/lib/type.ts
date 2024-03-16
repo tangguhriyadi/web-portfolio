@@ -35,5 +35,13 @@ export type ReviewType = {
   name: string;
   job: string;
   review: string;
-  link:string
+  link: string;
+};
+
+export type ArticleType = {
+  image: string | StaticImageData;
+  title: string;
+  link: string;
+  duration: number;
+  published_at: string;
 };

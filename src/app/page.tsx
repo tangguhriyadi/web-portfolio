@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import Work from "@/components/Work";
 import Reviews from "@/components/Reviews";
 import Cta from "@/components/Cta";
+import Article from "../components/Article";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Services />
       <Work />
+      <Article />
       <Reviews />
       <Cta />
     </main>
