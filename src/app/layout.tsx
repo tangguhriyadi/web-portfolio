@@ -4,13 +4,23 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "../providers/ThemeProvider";
+import { headers } from "next/headers";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Muhammad Tangguh Riyadi | Software Engineer",
-  description:
-    "Professional Software Engineer, Expertise in NextJS, ReactJS, Typescript, NodeJS, Go",
+export const generateMetadata = (): Metadata => {
+  const host = headers().get("x-forwarded-host");
+
+  return {
+    metadataBase: new URL(`https://${host}`),
+
+    title: "Muhammad Tangguh Riyadi | Software Engineer",
+    description:
+      "Professional Software Engineer, Expertise in NextJS, ReactJS, Typescript, NodeJS, Go",
+    icons: {
+      icon: ["/logo-tr.svg"],
+    },
+  };
 };
 
 export default function RootLayout({
