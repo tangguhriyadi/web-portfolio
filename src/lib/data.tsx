@@ -324,4 +324,11 @@ export const articleData: ArticleType[] = [
     duration: 3,
     published_at: "2024-03-16",
   },
+  {
+    title: "Enhancing Javascript Code: Stop Using Switch-Case !",
+    image: "/article/js.png",
+    link: "https://medium.com/@mtangguh97/enhancing-javascript-code-stop-using-switch-case-b0777d9fbe58",
+    duration: 3,
+    published_at: "2024-03-18",
+  },
 ];

@@ -15,7 +15,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
     <Link href={article.link} target="_blank">
       <Card className={cn("group overflow-hidden relative cursor-pointer")}>
         <CardHeader className="p-0">
-          <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-no-repeat overflow-hidden">
+          <div className="relative w-full h-[275px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-no-repeat overflow-hidden">
             <Image
               className="absolute bottom-0 shadow-2xl max-h-[250px]"
               src={article.image}
@@ -29,7 +29,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
         </CardHeader>
         <div
           style={{ display: "-webkit-box", WebkitBoxOrient: "vertical" }}
-          className="h-full px-8 py-6 overflow-hidden"
+          className="h-full px-8 py-4 overflow-hidden"
         >
           <h4
             className="h4 overflow-hidden"
@@ -43,7 +43,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
             {article.title}
           </h4>
         </div>
-        <div className="px-8 py-6 flex justify-start gap-x-6">
+        <div className="px-8 py-2 flex justify-start gap-x-6">
           <Image
             src="/self.jpg"
             alt="self"
