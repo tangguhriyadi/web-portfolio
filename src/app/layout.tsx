@@ -4,15 +4,18 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "../providers/ThemeProvider";
-import { headers } from "next/headers";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const generateMetadata = (): Metadata => {
-  const host = headers().get("x-forwarded-host");
+  const isLocal = process.env.ENV_IS_LOCAL;
+
+  const url = isLocal
+    ? "http://localhost:3000"
+    : "https://tangguhriyadi.vercel.app";
 
   return {
-    metadataBase: new URL(`https://${host}`),
+    metadataBase: new URL(url),
 
     title: "Muhammad Tangguh Riyadi | Software Engineer",
     description:
