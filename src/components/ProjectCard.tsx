@@ -33,6 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             height={250}
             alt="project"
             priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="flex justify-center items-center gap-x-2">
             {project.link && (
@@ -59,10 +60,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="h-full px-8 py-6">
         <div className="absolute top-4 left-5 flex gap-x-2">
           {project.categories.map((category, index) => (
-            <Badge
-              key={index}
-              className="uppercase text-sm font-medium mb-2 "
-            >
+            <Badge key={index} className="uppercase text-sm font-medium mb-2 ">
               {category}
             </Badge>
           ))}
