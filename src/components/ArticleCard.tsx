@@ -50,7 +50,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
             width={54}
             height={54}
             priority
-            className="rounded-full border border-neutral-500"
+            className="rounded-full border border-neutral-500 h-[54px] w-[54px]"
           />
 
           <div className="flex flex-col gap-y-1">
