@@ -2,24 +2,21 @@ import Image from "next/image";
 import React from "react";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import Link from "next/link";
-import { Link2Icon } from "lucide-react";
 import { ArticleType } from "@/lib/type";
 import { cn, formatDate } from "../lib/utils";
-import useResponsive from "../hooks/useResponsive";
 
 interface ArticleCardProps {
   article: ArticleType;
 }
 
 const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
-  const { isDesktop } = useResponsive();
   return (
     <Link href={article.link} target="_blank">
       <Card className={cn("group overflow-hidden relative cursor-pointer")}>
         <CardHeader className="p-0">
           <div className="relative w-full h-[275px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-no-repeat overflow-hidden">
             <Image
-              className="absolute bottom-0 shadow-2xl max-h-[250px]"
+              className="absolute bottom-0 shadow-2xl h-[225px]"
               src={article.image}
               width={247}
               height={250}
@@ -37,7 +34,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
             className="h4 overflow-hidden"
             style={{
               display: "-webkit-box",
-              WebkitLineClamp: isDesktop ? 2 : 1,
+              WebkitLineClamp: 2,
               WebkitBoxOrient: "vertical",
               textOverflow: "ellipsis",
             }}

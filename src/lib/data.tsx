@@ -331,4 +331,11 @@ export const articleData: ArticleType[] = [
     duration: 3,
     published_at: "2024-03-18",
   },
+  {
+    title: "A Career Shifting Journey: From Accountant to Software Engineer",
+    image: "/article/shift2.jpg",
+    link: "https://medium.com/@mtangguh97/a-career-shifting-journey-from-accountant-to-software-engineer-ce7476cd8f89",
+    duration: 3,
+    published_at: "2024-03-22",
+  },
 ];
