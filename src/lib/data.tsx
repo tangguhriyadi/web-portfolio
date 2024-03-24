@@ -46,7 +46,7 @@ export const projectData: ProjectType[] = [
   {
     image: "/work/kanboom.png",
     categories: ["next js", "Go"],
-    name: "Kanboom Scrum (Project Portfolio)",
+    name: "KanBoom (Project Portfolio)",
     description:
       "A powerful yet simple tool designed to streamline project management and enhance team collaboration",
     link: "https://kanboom-scrum.vercel.app",
