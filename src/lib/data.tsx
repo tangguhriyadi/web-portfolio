@@ -27,7 +27,6 @@ import {
 } from "lucide-react";
 
 export const projectData: ProjectType[] = [
- 
   {
     image: "/work/lh-figma.png",
     categories: ["next js", "typescript"],
@@ -51,7 +50,7 @@ export const projectData: ProjectType[] = [
     description:
       "A powerful yet simple tool designed to streamline project management and enhance team collaboration",
     link: "https://kanboom-scrum.vercel.app",
-    github: "https://github.com/tangguhriyadi/kanboom"
+    github: "https://github.com/tangguhriyadi/kanboom",
   },
   {
     image: "/work/anime.png",
