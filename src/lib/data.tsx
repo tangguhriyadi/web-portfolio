@@ -318,6 +318,13 @@ export const reviewsData: ReviewType[] = [
 
 export const articleData: ArticleType[] = [
   {
+    title: "Generative AI: Introduction To Gen AI \n",
+    image: "/article/genai.png",
+    link: "https://medium.com/@mtangguh97/introduction-to-gen-ai-2f943ef67226",
+    duration: 10,
+    published_at: "2024-05-19",
+  },
+  {
     title:
       "JavaScript Clean Code for Beginners: Best Practices for Writing Maintainable Code",
     image: "/article/js.png",

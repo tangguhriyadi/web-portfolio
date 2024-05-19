@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <Link href="/CV_ATS_24_04_2024.pdf" target="_blank">
+              <Link href="/CV_05192024.pdf" target="_blank">
                 <Button variant="secondary" className="gap-x-2">
                   Download Resume <Download size={18} />
                 </Button>
