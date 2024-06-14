@@ -201,11 +201,6 @@ export const qualificationData: QualificationType[] = [
     title: "experience",
     data: [
       {
-        company: "PT Richeese Kuliner Indonesia",
-        role: "Asset Staff",
-        years: "2019 - 2020",
-      },
-      {
         company: "PT Tricada Intronik",
         role: "Frontend Engineer",
         years: "2022",
@@ -214,6 +209,11 @@ export const qualificationData: QualificationType[] = [
         company: "PT Motiolabs Digitial Indonesia",
         role: "Software Engineer",
         years: "2022 - present",
+      },
+      {
+        company: "Frame.so",
+        role: "Software Engineer (Part Time)",
+        years: "2024 - present",
       },
     ],
   },
