@@ -28,6 +28,15 @@ import {
 
 export const projectData: ProjectType[] = [
   {
+    image: "/work/openai.png",
+    categories: ["next js", "typescript"],
+    name: "Chatbot RKD",
+    description:
+      "AI-powered Virtual Assistant that swiftly answers queries via text or image prompts",
+    link: "https://chatbot-rkd.vercel.app/",
+    github: "https://github.com/tangguhriyadi/chatbot-rag",
+  },
+  {
     image: "/work/lh-figma.png",
     categories: ["next js", "typescript"],
     name: "Learnhub SaaS",
@@ -133,7 +142,7 @@ export const serviceData: ServiceType[] = [
 
 export const iconData: SocialIconType[] = [
   {
-    path: "https://www.linkedin.com/in/muhammad-tangguh-riyadi-b0a36a194/",
+    path: "https://www.linkedin.com/in/tangguhriyadi/",
     name: <RiLinkedinFill />,
   },
   {
@@ -201,11 +210,6 @@ export const qualificationData: QualificationType[] = [
     title: "experience",
     data: [
       {
-        company: "PT Tricada Intronik",
-        role: "Frontend Engineer",
-        years: "2022",
-      },
-      {
         company: "PT Motiolabs Digitial Indonesia",
         role: "Software Engineer",
         years: "2022 - present",
@@ -213,7 +217,12 @@ export const qualificationData: QualificationType[] = [
       {
         company: "Frame.so",
         role: "Software Engineer (Part Time)",
-        years: "2024 - present",
+        years: "2024",
+      },
+      {
+        company: "PT Tricada Intronik",
+        role: "Frontend Engineer",
+        years: "2022",
       },
     ],
   },
@@ -227,7 +236,7 @@ export const skillData: QualificationType[] = [
         name: "HTML, CSS",
       },
       {
-        name: "Javascript, Typescript, Go",
+        name: "Javascript, Typescript, Go, Python",
       },
       {
         name: "Frontend Development",
@@ -239,13 +248,13 @@ export const skillData: QualificationType[] = [
         name: "Backend Development",
       },
       {
-        name: "NestJS ExpressJS",
+        name: "NestJS, ExpressJS, NestJS",
       },
       {
-        name: "PostgreSQL MongoDB Redis",
+        name: "PostgreSQL, MongoDB, Redis, VectorDB",
       },
       {
-        name: "Docker",
+        name: "Docker, Kubernetes, Langchain",
       },
     ],
   },
