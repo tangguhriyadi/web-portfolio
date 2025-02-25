@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
           <div className="hidden xl:flex relative">
             {/* badge 1 */}
             <Badge
-              endCountNum={2}
+              endCountNum={3}
               badgeText="Years Of Experience"
               icon={<RiBriefcase4Fill />}
               containerStyles="absolute top-[24%] -left-[5rem]"
