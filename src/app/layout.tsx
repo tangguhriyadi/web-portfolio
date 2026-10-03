@@ -20,7 +20,7 @@ export const generateMetadata = (): Metadata => {
     verification: {
       google: "E_xtQ4V5sDg532n5mbZYdHSmpWRjVXoBH99iHGnGt0M",
     },
-    title: "Muhammad Tangguh Riyadi | Software Engineer",
+    title: "Muhammad Tangguh Riyadi | Fullstack Web Developer",
     description:
       "Professional Software Engineer, Expertise in NextJS, ReactJS, Typescript, NodeJS, Go",
     icons: {
